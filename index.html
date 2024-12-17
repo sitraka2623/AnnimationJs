@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            font-size: 60px;
+            color: blue;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 3px black;
+        }
+        body{
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 200px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+            transform: translateX(400%);
+            transition: transform 0.3s ease;
+        }
+        .box:nth-last-of-type(even){
+            transform: translateX(-400%);
+        }
+        .box.show{
+            transform: translateX(0);
+        }
+        .box img{
+            height: 200px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Annimation photos</h1>
+    <div class="box blue show">
+        <img src="img/1.jpg" alt="">
+    </div>
+    <div class="box red">
+        <img src="img/2.jpg" alt="">
+    </div>
+    <div class="box green">
+        <img src="img/3.jpg" alt="">
+    </div>
+    <div class="box blue">
+        <img src="img/4.jpg" alt="">
+    </div>
+    <div class="box red">
+        <img src="img/5.jpg" alt="">
+    </div>
+    <div class="box green">
+        <img src="img/6.jpg" alt="">
+    </div>
+    <div class="box blue">
+        <img src="img/7.jpg" alt="">
+    </div>
+    <div class="box red">
+        <img src="img/8.jpg" alt="">
+    </div>
+    <div class="box green">
+        <img src="img/9.jpg" alt="">
+    </div>
+    <div class="box blue">
+        <img src="img/10.jpg" alt="">
+    </div>
+    <div class="box red">
+        <img src="img/11.jpg" alt="">
+    </div>
+    <div class="box green">
+        <img src="img/12.jpg" alt="">
+    </div>
+    <div class="box blue">
+        <img src="img/13.jpg" alt="">
+    </div>
+    <div class="box red">
+        <img src="img/14.jpg" alt="">
+    </div>
+    <div class="box green">
+        <img src="img/15.png" alt="">
+    </div>
+    <div class="box blue">
+        <img src="img/16.jpg" alt="">
+    </div>
+    <div class="box red">
+        <img src="img/17.jpg" alt="">
+    </div>
+    <div class="box green">
+        <img src="img/18.jpg" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
